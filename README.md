@@ -36,6 +36,7 @@ Welcome to Yura Mishin's Java repository.
 + [JUnit 5](https://junit.org/junit5/)
 + [Java Hamcrest](http://hamcrest.org/JavaHamcrest/)
 + [AssertJ](https://joel-costigliola.github.io/assertj/)
++ [Introduction to AssertJ](https://www.baeldung.com/introduction-to-assertj)
 + [Mokito](https://site.mockito.org/)
 + [Jayway JsonPath](https://github.com/json-path/JsonPath)
 + [XUnit Test Patterns](http://xunitpatterns.com/)
@@ -93,6 +94,7 @@ Welcome to Yura Mishin's Java repository.
 + [UML](https://sourcemaking.com/uml)
 + [uml-diagrams.org](https://www.uml-diagrams.org/)
 + [draw.io](http://draw.io/)
++ [Отношения классов — от UML к коду](https://habr.com/ru/post/150041/)
 ## Clean code
 + [Clean Code by Robert C. Martin](https://www.oreilly.com/library/view/clean-code/9780136083238/)
 + [Bob Martin. Solid principles of object oriented and agile design](https://www.youtube.com/watch?v=zHiWqnTWsn4)
