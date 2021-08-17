@@ -26,6 +26,7 @@ Welcome to Yura Mishin's Java repository.
 + [Awesome Java. Libhunt](https://java.libhunt.com/)
 + [Source code snapshot](https://carbon.now.sh/)
 + [javatpoint](https://www.javatpoint.com/)
++ [Zetcode.Java](https://zetcode.com/all/#java)
 ## GIT
 + [Git Doc](https://git-scm.com/doc)
 + [Flight rules for Git](https://github.com/k88hudson/git-flight-rules)
