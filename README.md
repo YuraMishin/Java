@@ -55,6 +55,7 @@ Welcome to Yura Mishin's Java repository.
 ## Data structures and algorithms
 + [Big-O Complexity Chart](https://www.bigocheatsheet.com/)
 + [15 Sorting Algorithms in 6 Minutes](https://www.youtube.com/watch?v=kPRA0W1kECg)
++ [The Science of 3D Sorting Algorithms](https://youtu.be/bsSu0LQmhY8)
 + [Структуры данных в картинках](https://habr.com/ru/post/128269/)
 + [Niklaus Wirth. Algorithms and Data Structures](https://www.amazon.com/gp/product/0130220051/)
 + [Robert Lafore. Data Structures and Algorithms in Java](https://www.amazon.com/Data-Structures-Algorithms-Java-2nd/dp/0672324539)
@@ -94,8 +95,11 @@ Welcome to Yura Mishin's Java repository.
 ## UML
 + [UML](https://sourcemaking.com/uml)
 + [uml-diagrams.org](https://www.uml-diagrams.org/)
++ [Enterprise Architect](https://sparxsystems.com/)
 + [draw.io](http://draw.io/)
 + [Отношения классов — от UML к коду](https://habr.com/ru/post/150041/)
++ [ArgoUML](https://argouml.softonic.ru/)
++ [PlantUML](https://plantuml.com/ru/)
 ## Clean code
 + [Clean Code by Robert C. Martin](https://www.oreilly.com/library/view/clean-code/9780136083238/)
 + [Bob Martin. Solid principles of object oriented and agile design](https://www.youtube.com/watch?v=zHiWqnTWsn4)

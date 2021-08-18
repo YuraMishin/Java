@@ -30,7 +30,7 @@ public class BinarySearch {
      * @param right  Right.
      * @return Boolean.
      */
-    private boolean binarySearchRec(
+    public boolean binarySearchRec(
             final int[] array,
             final int target,
             final int left,
