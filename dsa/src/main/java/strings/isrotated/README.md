@@ -1,0 +1,1 @@
+# Checking whether the word is a rotated version of another one.
