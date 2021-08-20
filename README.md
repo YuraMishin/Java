@@ -27,6 +27,8 @@ Welcome to Yura Mishin's Java repository.
 + [Source code snapshot](https://carbon.now.sh/)
 + [javatpoint](https://www.javatpoint.com/)
 + [Zetcode.Java](https://zetcode.com/all/#java)
++ [Unicode Character Table](https://unicode-table.com/en/)
++ [Zulip](https://zulip.com/)
 ## GIT
 + [Git Doc](https://git-scm.com/doc)
 + [Flight rules for Git](https://github.com/k88hudson/git-flight-rules)
@@ -120,6 +122,11 @@ Welcome to Yura Mishin's Java repository.
 + [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
 ## Web
 + [Web Framework Benchmarks](https://www.techempower.com/benchmarks/)
+## Spring Framework
++ [Spring Initializr](https://start.spring.io/)
++ [Spring Guides](https://spring.io/guides)
++ [Udemy. John Thompson. Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/)
++ [John Thompson. Github](https://github.com/springframeworkguru)
 ## Books
 + [Head First Java](https://www.oreilly.com/library/view/head-first-java/0596009208/)
 + [Herbert Schildt. Java: The Complete Reference](https://www.amazon.com/Java-Complete-Reference-Eleventh/dp/1260440230/)

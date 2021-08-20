@@ -21,6 +21,7 @@
         <module>core</module>
         <module>dsa</module>
         <module>jdbc</module>
+        <module>university</module>
     </modules>
 
     <properties>
