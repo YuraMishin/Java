@@ -29,6 +29,7 @@ Welcome to Yura Mishin's Java repository.
 + [Zetcode.Java](https://zetcode.com/all/#java)
 + [Unicode Character Table](https://unicode-table.com/en/)
 + [Zulip](https://zulip.com/)
++ [Codewars](https://www.codewars.com/)
 ## GIT
 + [Git Doc](https://git-scm.com/doc)
 + [Flight rules for Git](https://github.com/k88hudson/git-flight-rules)
