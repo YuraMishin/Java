@@ -35,6 +35,7 @@ Welcome to Yura Mishin's Java repository.
 + [Flight rules for Git](https://github.com/k88hudson/git-flight-rules)
 + [GitHowTo](https://githowto.com/ru)
 + [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
++ [GIT PURR! Git Commands Explained with Cats!](https://girliemac.com/blog/2017/12/26/git-purr/)
 ## JUnit
 + [JUnit 4](https://junit.org/junit4/)
 + [JUnit 5](https://junit.org/junit5/)
@@ -91,6 +92,7 @@ Welcome to Yura Mishin's Java repository.
 + [Flyway](https://flywaydb.org/documentation/migrations#naming)
 + [JDL-Studio](https://start.jhipster.tech/jdl-studio/)
 + [HikariCP](https://github.com/brettwooldridge/HikariCP)
++ [SQL Translation](https://www.jooq.org/translate/)
 ## Hibernate ORM.
 + [Hibernate Doc](https://hibernate.org/orm/documentation/5.4/)
 + [Hibernate ORM User Guide](https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#preface)
@@ -128,6 +130,7 @@ Welcome to Yura Mishin's Java repository.
 + [Spring Guides](https://spring.io/guides)
 + [Udemy. John Thompson. Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/)
 + [John Thompson. Github](https://github.com/springframeworkguru)
++ [Spring Framework Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/)
 ## Books
 + [Head First Java](https://www.oreilly.com/library/view/head-first-java/0596009208/)
 + [Herbert Schildt. Java: The Complete Reference](https://www.amazon.com/Java-Complete-Reference-Eleventh/dp/1260440230/)
