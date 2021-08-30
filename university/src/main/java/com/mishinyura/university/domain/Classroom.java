@@ -9,21 +9,11 @@ import java.util.Objects;
  * @author Mishin Yura (mishin.inbox@gmail.com)
  * @since 27.08.2021
  */
-public class Classroom {
-    /**
-     * Id.
-     */
-    private Long id;
+public class Classroom extends Entity<Long> {
     /**
      * Name.
      */
     private String name;
-
-    /**
-     * Constructor.
-     */
-    public Classroom() {
-    }
 
     /**
      * Constructor.
@@ -35,17 +25,14 @@ public class Classroom {
     }
 
     /**
-     * @return id
+     * Constructor.
+     *
+     * @param id   Id
+     * @param name Name
      */
-    public Long getId() {
-        return id;
-    }
-
-    /**
-     * @param id id
-     */
-    public void setId(final Long id) {
+    public Classroom(final Long id, final String name) {
         this.id = id;
+        this.name = name;
     }
 
     /**
@@ -91,7 +78,7 @@ public class Classroom {
      */
     @Override
     public String toString() {
-        return "Subject{"
+        return "Classroom{"
             + "id=" + id
             + ", name='" + name + '\'' + '}';
     }

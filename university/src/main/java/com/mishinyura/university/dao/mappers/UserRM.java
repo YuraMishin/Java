@@ -8,14 +8,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Class UserRowMapper.
+ * Class UserRM.
  * Implements user row mapper.
  *
  * @author Mishin Yura (mishin.inbox@gmail.com)
  * @since 28.08.2021
  */
 @Component("userRowMapper")
-public class UserRowMapper implements RowMapper<User> {
+public class UserRM implements RowMapper<User> {
     /**
      * @param rs ResultSet
      * @param i  I

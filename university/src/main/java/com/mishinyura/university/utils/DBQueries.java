@@ -74,6 +74,28 @@ public final class DBQueries {
      */
     public static final String DELETE_GROUP;
     //
+    // ClassroomDAOImpl
+    /**
+     * ALL_CLASSROOMS.
+     */
+    public static final String ALL_CLASSROOMS;
+    /**
+     * USER_BY_ID.
+     */
+    public static final String CLASSROOM_BY_ID;
+    /**
+     * CREATE_CLASSROOM.
+     */
+    public static final String CREATE_CLASSROOM;
+    /**
+     * UPDATE_CLASSROOM.
+     */
+    public static final String UPDATE_CLASSROOM;
+    /**
+     * DELETE_CLASSROOM.
+     */
+    public static final String DELETE_CLASSROOM;
+    //
 
     static {
         ALL_USERS = ResUtils.loadText("db/sql/userDAOImpl/allUsers.sql");
@@ -103,6 +125,17 @@ public final class DBQueries {
             .loadText("db/sql/groupDAOImpl/updateGroup.sql");
         DELETE_GROUP = ResUtils
             .loadText("db/sql/groupDAOImpl/deleteGroup.sql");
+        //
+        ALL_CLASSROOMS = ResUtils
+            .loadText("db/sql/classroomDAOImpl/allClassrooms.sql");
+        CLASSROOM_BY_ID = ResUtils
+            .loadText("db/sql/classroomDAOImpl/classroomById.sql");
+        CREATE_CLASSROOM = ResUtils
+            .loadText("db/sql/classroomDAOImpl/createClassroom.sql");
+        UPDATE_CLASSROOM = ResUtils
+            .loadText("db/sql/classroomDAOImpl/updateClassroom.sql");
+        DELETE_CLASSROOM = ResUtils
+            .loadText("db/sql/classroomDAOImpl/deleteClassroom.sql");
     }
 
     /**

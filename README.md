@@ -9,6 +9,7 @@ Welcome to Yura Mishin's Java repository.
 + [Google](https://www.google.com/)
 + [Stackoverflow](https://stackoverflow.com/)
 + [Online Java compiler](https://repl.it/languages/java)
++ [Pastebin.com](https://pastebin.com/)
 + [JDK. Java Development Kit](https://www.oracle.com/java/technologies/javase-downloads.html)
 + [Java SE Documentation](https://docs.oracle.com/en/java/javase/)
 + [Oracle. The Java Tutorials](https://docs.oracle.com/javase/tutorial/)
@@ -30,6 +31,11 @@ Welcome to Yura Mishin's Java repository.
 + [Unicode Character Table](https://unicode-table.com/en/)
 + [Zulip](https://zulip.com/)
 + [Codewars](https://www.codewars.com/)
++ [Ведение лога приложения](https://web.archive.org/web/20170611191810/http://skipy.ru/useful/logging.html)
++ [Архитектура логирования](https://habr.com/ru/post/135242/)
++ [Правильное логгирование в Microsoft .NET Framework](https://habr.com/ru/post/98638/)
++ [Spring Boot SLF4j Logback example](https://mkyong.com/spring-boot/spring-boot-slf4j-logging-example/)
+
 ## GIT
 + [Git Doc](https://git-scm.com/doc)
 + [Flight rules for Git](https://github.com/k88hudson/git-flight-rules)
@@ -125,9 +131,11 @@ Welcome to Yura Mishin's Java repository.
 + [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
 ## Web
 + [Web Framework Benchmarks](https://www.techempower.com/benchmarks/)
++ [Bootstrap](https://getbootstrap.com/)
 ## Spring Framework
 + [Spring Initializr](https://start.spring.io/)
 + [Spring Guides](https://spring.io/guides)
++ [Spring Boot Tutorial](https://www.tutorialspoint.com/spring_boot/index.htm)
 + [Udemy. John Thompson. Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/)
 + [John Thompson. Github](https://github.com/springframeworkguru)
 + [Spring Framework Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/)
@@ -145,3 +153,4 @@ Welcome to Yura Mishin's Java repository.
 ## Add-ons
 + [Java Faker](https://github.com/DiUS/java-faker)
 + [ASCII Tables for Java](https://github.com/freva/ascii-table)
++ [jsoup: Java HTML Parser](https://jsoup.org/)

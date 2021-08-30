@@ -1,7 +1,7 @@
 package com.mishinyura.university.dao.impl;
 
 import com.mishinyura.university.dao.GroupDAO;
-import com.mishinyura.university.dao.mappers.GroupRowMapper;
+import com.mishinyura.university.dao.mappers.GroupRM;
 import com.mishinyura.university.domain.Group;
 import com.mishinyura.university.utils.DBQueries;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,10 +31,10 @@ public class GroupDAOImpl extends AbstractCrudDAO<Group, Long>
     private JdbcTemplate jdbcTemplate;
 
     /**
-     * GroupRowMapper.
+     * GroupRM.
      */
     @Autowired
-    private GroupRowMapper groupRowMapper;
+    private GroupRM groupRM;
 
     /**
      * Method finds all groups.
@@ -43,7 +43,7 @@ public class GroupDAOImpl extends AbstractCrudDAO<Group, Long>
      */
     public List<Group> findAll() {
         return this.jdbcTemplate.query(
-            DBQueries.ALL_GROUPS, groupRowMapper
+            DBQueries.ALL_GROUPS, groupRM
         );
     }
 
@@ -59,7 +59,7 @@ public class GroupDAOImpl extends AbstractCrudDAO<Group, Long>
             DBQueries.GROUP_BY_ID,
             rs -> {
                 if (rs.next()) {
-                    return Optional.ofNullable(groupRowMapper.mapRow(rs, 1));
+                    return Optional.ofNullable(groupRM.mapRow(rs, 1));
                 } else {
                     return Optional.empty();
                 }

@@ -6,3 +6,6 @@ values ('Subject1');
 
 insert into groups(name)
 values ('Group1');
+
+insert into classrooms(name)
+values ('Classroom1');

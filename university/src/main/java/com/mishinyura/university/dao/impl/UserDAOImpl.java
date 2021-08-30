@@ -1,7 +1,7 @@
 package com.mishinyura.university.dao.impl;
 
 import com.mishinyura.university.dao.UserDAO;
-import com.mishinyura.university.dao.mappers.UserRowMapper;
+import com.mishinyura.university.dao.mappers.UserRM;
 import com.mishinyura.university.domain.User;
 import com.mishinyura.university.utils.DBQueries;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,10 +31,10 @@ public class UserDAOImpl extends AbstractCrudDAO<User, Long>
     private JdbcTemplate jdbcTemplate;
 
     /**
-     * UserRowMapper.
+     * UserRM.
      */
     @Autowired
-    private UserRowMapper userRowMapper;
+    private UserRM userRM;
 
     /**
      * Method finds all users.
@@ -43,7 +43,7 @@ public class UserDAOImpl extends AbstractCrudDAO<User, Long>
      */
     public List<User> findAll() {
         return this.jdbcTemplate.query(
-            DBQueries.ALL_USERS, userRowMapper
+            DBQueries.ALL_USERS, userRM
         );
     }
 
@@ -59,7 +59,7 @@ public class UserDAOImpl extends AbstractCrudDAO<User, Long>
             DBQueries.USER_BY_ID,
             rs -> {
                 if (rs.next()) {
-                    return Optional.ofNullable(userRowMapper.mapRow(rs, 1));
+                    return Optional.ofNullable(userRM.mapRow(rs, 1));
                 } else {
                     return Optional.empty();
                 }

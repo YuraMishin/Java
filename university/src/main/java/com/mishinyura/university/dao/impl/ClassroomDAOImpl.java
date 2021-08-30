@@ -1,8 +1,8 @@
 package com.mishinyura.university.dao.impl;
 
-import com.mishinyura.university.dao.SubjectDAO;
-import com.mishinyura.university.dao.mappers.SubjectRM;
-import com.mishinyura.university.domain.Subject;
+import com.mishinyura.university.dao.ClassroomDAO;
+import com.mishinyura.university.dao.mappers.ClassroomRM;
+import com.mishinyura.university.domain.Classroom;
 import com.mishinyura.university.utils.DBQueries;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -15,15 +15,15 @@ import java.util.Objects;
 import java.util.Optional;
 
 /**
- * Class SubjectDAOImpl.
- * Implements SubjectDAO.
+ * Class ClassroomDAOImpl.
+ * Implements ClassroomDAO.
  *
  * @author Mishin Yura (mishin.inbox@gmail.com)
  * @since 30.08.2021
  */
 @Repository
-public class SubjectDAOImpl extends AbstractCrudDAO<Subject, Long>
-    implements SubjectDAO {
+public class ClassroomDAOImpl extends AbstractCrudDAO<Classroom, Long>
+    implements ClassroomDAO {
     /**
      * JdbcTemplate.
      */
@@ -31,35 +31,35 @@ public class SubjectDAOImpl extends AbstractCrudDAO<Subject, Long>
     private JdbcTemplate jdbcTemplate;
 
     /**
-     * SubjectRM.
+     * ClassroomRM.
      */
     @Autowired
-    private SubjectRM subjectRM;
+    private ClassroomRM classroomRM;
 
     /**
-     * Method finds all subjects.
+     * Method finds all classrooms.
      *
-     * @return List<Subject>
+     * @return List<Classroom>
      */
-    public List<Subject> findAll() {
+    public List<Classroom> findAll() {
         return this.jdbcTemplate.query(
-            DBQueries.ALL_SUBJECTS, subjectRM
+            DBQueries.ALL_CLASSROOMS, classroomRM
         );
     }
 
     /**
-     * Method finds subject by id.
+     * Method finds Classroom by id.
      *
      * @param id Id
-     * @return Optional<Subject>
+     * @return Optional<Classroom>
      */
     @Override
-    public Optional<Subject> findById(final Long id) {
+    public Optional<Classroom> findById(final Long id) {
         return this.jdbcTemplate.query(
-            DBQueries.SUBJECT_BY_ID,
+            DBQueries.CLASSROOM_BY_ID,
             rs -> {
                 if (rs.next()) {
-                    return Optional.ofNullable(subjectRM.mapRow(rs, 1));
+                    return Optional.ofNullable(classroomRM.mapRow(rs, 1));
                 } else {
                     return Optional.empty();
                 }
@@ -69,7 +69,7 @@ public class SubjectDAOImpl extends AbstractCrudDAO<Subject, Long>
     }
 
     /**
-     * Method deletes subject by id.
+     * Method deletes Classroom by id.
      *
      * @param id Id
      * @return boolean
@@ -77,41 +77,43 @@ public class SubjectDAOImpl extends AbstractCrudDAO<Subject, Long>
     @Override
     public boolean deleteById(final Long id) {
         var params = new Object[]{id};
-        return this.jdbcTemplate.update(DBQueries.DELETE_SUBJECT, params) == 1;
+        return this.jdbcTemplate
+            .update(DBQueries.DELETE_CLASSROOM, params) == 1;
     }
 
     /**
-     * Method creates subject.
+     * Method creates classroom.
      *
-     * @param subject Subject
-     * @return Subject
+     * @param classroom classroom
+     * @return classroom
      */
     @Override
-    protected Subject create(final Subject subject) {
+    protected Classroom create(final Classroom classroom) {
         var keyHolder = new GeneratedKeyHolder();
         this.jdbcTemplate.update(conn -> {
             var ps = conn.prepareStatement(
-                DBQueries.CREATE_SUBJECT,
+                DBQueries.CREATE_CLASSROOM,
                 Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, subject.getName());
+            ps.setString(1, classroom.getName());
             return ps;
         }, keyHolder);
-        subject.setId(Objects.requireNonNull(keyHolder.getKey()).longValue());
-        return subject;
+        classroom.setId(Objects.requireNonNull(keyHolder.getKey()).longValue());
+        return classroom;
     }
 
     /**
-     * Method updates subject.
+     * Method updates classroom.
      *
-     * @param subject Subject
-     * @return Subject
+     * @param classroom classroom
+     * @return classroom
      */
     @Override
-    protected Subject update(final Subject subject) {
-        var params = new Object[]{subject.getName(), subject.getId()};
-        var result = this.jdbcTemplate.update(DBQueries.UPDATE_SUBJECT, params);
+    protected Classroom update(final Classroom classroom) {
+        var params = new Object[]{classroom.getName(), classroom.getId()};
+        var result = this.jdbcTemplate
+            .update(DBQueries.UPDATE_CLASSROOM, params);
         if (result == 1) {
-            return subject;
+            return classroom;
         } else {
             throw new RuntimeException("Exception caught while updating");
         }
