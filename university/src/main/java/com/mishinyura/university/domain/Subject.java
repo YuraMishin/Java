@@ -30,23 +30,9 @@ public class Subject extends Entity<Long> {
      * @param id   Id
      * @param name Name
      */
-    public Subject(Long id, String name) {
+    public Subject(final Long id, final String name) {
         this.id = id;
         this.name = name;
-    }
-
-    /**
-     * @return id
-     */
-    public Long getId() {
-        return id;
-    }
-
-    /**
-     * @param id id
-     */
-    public void setId(final Long id) {
-        this.id = id;
     }
 
     /**

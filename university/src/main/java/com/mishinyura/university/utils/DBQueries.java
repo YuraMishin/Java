@@ -52,6 +52,28 @@ public final class DBQueries {
      */
     public static final String DELETE_SUBJECT;
     //
+    // GroupDAOImpl
+    /**
+     * ALL_GROUPS.
+     */
+    public static final String ALL_GROUPS;
+    /**
+     * USER_BY_ID.
+     */
+    public static final String GROUP_BY_ID;
+    /**
+     * CREATE_GROUP.
+     */
+    public static final String CREATE_GROUP;
+    /**
+     * UPDATE_GROUP.
+     */
+    public static final String UPDATE_GROUP;
+    /**
+     * DELETE_GROUP.
+     */
+    public static final String DELETE_GROUP;
+    //
 
     static {
         ALL_USERS = ResUtils.loadText("db/sql/userDAOImpl/allUsers.sql");
@@ -60,11 +82,27 @@ public final class DBQueries {
         UPDATE_USER = ResUtils.loadText("db/sql/userDAOImpl/updateUser.sql");
         DELETE_USER = ResUtils.loadText("db/sql/userDAOImpl/deleteUser.sql");
         //
-        ALL_SUBJECTS = ResUtils.loadText("db/sql/subjectDAOImpl/allSubjects.sql");
-        SUBJECT_BY_ID = ResUtils.loadText("db/sql/subjectDAOImpl/subjectById.sql");
-        CREATE_SUBJECT = ResUtils.loadText("db/sql/subjectDAOImpl/createSubject.sql");
-        UPDATE_SUBJECT = ResUtils.loadText("db/sql/subjectDAOImpl/updateSubject.sql");
-        DELETE_SUBJECT = ResUtils.loadText("db/sql/subjectDAOImpl/deleteSubject.sql");
+        ALL_SUBJECTS = ResUtils
+            .loadText("db/sql/subjectDAOImpl/allSubjects.sql");
+        SUBJECT_BY_ID = ResUtils
+            .loadText("db/sql/subjectDAOImpl/subjectById.sql");
+        CREATE_SUBJECT = ResUtils
+            .loadText("db/sql/subjectDAOImpl/createSubject.sql");
+        UPDATE_SUBJECT = ResUtils
+            .loadText("db/sql/subjectDAOImpl/updateSubject.sql");
+        DELETE_SUBJECT = ResUtils
+            .loadText("db/sql/subjectDAOImpl/deleteSubject.sql");
+        //
+        ALL_GROUPS = ResUtils
+            .loadText("db/sql/groupDAOImpl/allGroups.sql");
+        GROUP_BY_ID = ResUtils
+            .loadText("db/sql/groupDAOImpl/groupById.sql");
+        CREATE_GROUP = ResUtils
+            .loadText("db/sql/groupDAOImpl/createGroup.sql");
+        UPDATE_GROUP = ResUtils
+            .loadText("db/sql/groupDAOImpl/updateGroup.sql");
+        DELETE_GROUP = ResUtils
+            .loadText("db/sql/groupDAOImpl/deleteGroup.sql");
     }
 
     /**
