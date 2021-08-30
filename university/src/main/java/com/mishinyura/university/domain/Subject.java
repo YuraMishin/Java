@@ -9,11 +9,7 @@ import java.util.Objects;
  * @author Mishin Yura (mishin.inbox@gmail.com)
  * @since 24.08.2021
  */
-public class Subject {
-    /**
-     * Id.
-     */
-    private Long id;
+public class Subject extends Entity<Long> {
     /**
      * Name.
      */
@@ -21,16 +17,21 @@ public class Subject {
 
     /**
      * Constructor.
+     *
+     * @param name Name
      */
-    public Subject() {
+    public Subject(final String name) {
+        this.name = name;
     }
 
     /**
      * Constructor.
      *
+     * @param id   Id
      * @param name Name
      */
-    public Subject(final String name) {
+    public Subject(Long id, String name) {
+        this.id = id;
         this.name = name;
     }
 
