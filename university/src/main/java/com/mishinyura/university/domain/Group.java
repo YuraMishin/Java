@@ -91,7 +91,7 @@ public class Group {
      */
     @Override
     public String toString() {
-        return "Group{"
+        return "Subject{"
             + "id=" + id
             + ", name='" + name + '\'' + '}';
     }

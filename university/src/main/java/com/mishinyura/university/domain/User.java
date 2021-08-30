@@ -9,21 +9,11 @@ import java.util.Objects;
  * @author Mishin Yura (mishin.inbox@gmail.com)
  * @since 27.08.2021
  */
-public class User {
-    /**
-     * Id.
-     */
-    private Long id;
+public class User extends Entity<Long> {
     /**
      * Name.
      */
     private String name;
-
-    /**
-     * Constructor.
-     */
-    public User() {
-    }
 
     /**
      * Constructor.
@@ -35,17 +25,14 @@ public class User {
     }
 
     /**
-     * @return id
+     * Constructor.
+     *
+     * @param id   Id
+     * @param name Name
      */
-    public Long getId() {
-        return id;
-    }
-
-    /**
-     * @param id id
-     */
-    public void setId(final Long id) {
+    public User(Long id, String name) {
         this.id = id;
+        this.name = name;
     }
 
     /**

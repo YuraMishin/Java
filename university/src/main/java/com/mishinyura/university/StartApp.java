@@ -2,6 +2,7 @@ package com.mishinyura.university;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Class StartApp.
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 24.08.2021
  */
 @SpringBootApplication
+@ComponentScan({"com.mishinyura.university"})
 public class StartApp {
     /**
      * Constructor.

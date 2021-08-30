@@ -91,7 +91,7 @@ public class Role {
      */
     @Override
     public String toString() {
-        return "Role{"
+        return "Subject{"
             + "id=" + id
             + ", name='" + name + '\'' + '}';
     }

@@ -91,7 +91,7 @@ public class Classroom {
      */
     @Override
     public String toString() {
-        return "Classroom{"
+        return "Subject{"
             + "id=" + id
             + ", name='" + name + '\'' + '}';
     }

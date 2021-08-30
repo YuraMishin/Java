@@ -34,10 +34,17 @@ class StartAppTests {
     void shouldCheckMigrationDone() {
         // given
         var query = "show tables";
-        var sizeExpected = 1;
+        var sizeExpected = 8;
         var tablesActual = new HashSet<>();
         var tablesExpected = List.of(
-            "SUBJECTS"
+            "SUBJECTS",
+            "GROUPS",
+            "TIME",
+            "CLASSROOMS",
+            "ROLES",
+            "SCHEDULE",
+            "USERS",
+            "USER_ROLE"
         );
 
         // when
