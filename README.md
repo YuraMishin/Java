@@ -132,6 +132,7 @@ Welcome to Yura Mishin's Java repository.
 ## Web
 + [Web Framework Benchmarks](https://www.techempower.com/benchmarks/)
 + [Bootstrap](https://getbootstrap.com/)
++ [Test your front-end against a real API](https://reqres.in/)
 ## Spring Framework
 + [Spring Initializr](https://start.spring.io/)
 + [Spring Guides](https://spring.io/guides)
