@@ -1,10 +1,12 @@
 package com.mishinyura.university.dao.impl;
 
+import com.mishinyura.university.dao.mappers.SubjectRowMapper;
 import com.mishinyura.university.domain.Subject;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.JdbcTest;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ActiveProfiles;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -17,14 +19,26 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @since 30.08.2021
  */
 @JdbcTest
-@ComponentScan
 @ActiveProfiles("test")
 class SubjectDAOImplTest {
     /**
-     * SubjectDAOImpl.
+     * JdbcTemplate.
      */
     @Autowired
+    JdbcTemplate jdbcTemplate;
+
+    /**
+     * SubjectDAOImpl.
+     */
     private SubjectDAOImpl subjectDAO;
+
+    /**
+     * Before each test performs method.
+     */
+    @BeforeEach
+    void setup() {
+        subjectDAO = new SubjectDAOImpl(jdbcTemplate, new SubjectRowMapper());
+    }
 
     /**
      * Tests findAll() method.
@@ -37,7 +51,7 @@ class SubjectDAOImplTest {
         var subjects = subjectDAO.findAll();
 
         // then
-        assertThat(subjects).hasSize(1);
+        assertThat(subjects).hasSize(2);
         assertThat(subjects.get(0).getId()).isEqualTo(1);
         assertThat(subjects.get(0).getName()).isEqualTo("Subject1");
     }
@@ -76,15 +90,15 @@ class SubjectDAOImplTest {
     @Test
     void shouldSaveNewSubject() {
         // given
-        var newSubject = new Subject("Subject2");
+        var newSubject = new Subject("Subject3");
 
         // when
         var subjectAdded = subjectDAO.save(newSubject);
 
         // then
         assertThat(subjectAdded).isInstanceOf(Subject.class);
-        assertThat(subjectAdded.getId()).isEqualTo(2L);
-        assertThat(subjectAdded.getName()).isEqualTo("Subject2");
+        assertThat(subjectAdded.getId()).isEqualTo(3L);
+        assertThat(subjectAdded.getName()).isEqualTo("Subject3");
     }
 
     /**

@@ -1,10 +1,9 @@
 package com.mishinyura.university.dao.impl;
 
 import com.mishinyura.university.dao.SubjectDAO;
-import com.mishinyura.university.dao.mappers.SubjectRM;
+import com.mishinyura.university.dao.mappers.SubjectRowMapper;
 import com.mishinyura.university.domain.Subject;
 import com.mishinyura.university.utils.DBQueries;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Repository;
@@ -27,14 +26,26 @@ public class SubjectDAOImpl extends AbstractCrudDAO<Subject, Long>
     /**
      * JdbcTemplate.
      */
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     /**
-     * SubjectRM.
+     * SubjectRowMapper.
      */
-    @Autowired
-    private SubjectRM subjectRM;
+    private final SubjectRowMapper mapper;
+
+    /**
+     * Constructor.
+     *
+     * @param jdbcTemplate JdbcTemplate
+     * @param mapper       Mapper
+     */
+    public SubjectDAOImpl(
+        final JdbcTemplate jdbcTemplate,
+        final SubjectRowMapper mapper) {
+
+        this.jdbcTemplate = jdbcTemplate;
+        this.mapper = mapper;
+    }
 
     /**
      * Method finds all subjects.
@@ -43,7 +54,7 @@ public class SubjectDAOImpl extends AbstractCrudDAO<Subject, Long>
      */
     public List<Subject> findAll() {
         return this.jdbcTemplate.query(
-            DBQueries.ALL_SUBJECTS, subjectRM
+            DBQueries.ALL_SUBJECTS, mapper
         );
     }
 
@@ -59,7 +70,7 @@ public class SubjectDAOImpl extends AbstractCrudDAO<Subject, Long>
             DBQueries.SUBJECT_BY_ID,
             rs -> {
                 if (rs.next()) {
-                    return Optional.ofNullable(subjectRM.mapRow(rs, 1));
+                    return Optional.ofNullable(mapper.mapRow(rs, 1));
                 } else {
                     return Optional.empty();
                 }

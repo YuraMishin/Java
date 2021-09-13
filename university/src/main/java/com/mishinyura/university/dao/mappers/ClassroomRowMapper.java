@@ -1,6 +1,6 @@
 package com.mishinyura.university.dao.mappers;
 
-import com.mishinyura.university.domain.Subject;
+import com.mishinyura.university.domain.Classroom;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
@@ -8,23 +8,24 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Class SubjectRM.
- * Implements subject row mapper.
+ * Class ClassroomRowMapper.
+ * Implements Classroom row mapper.
  *
  * @author Mishin Yura (mishin.inbox@gmail.com)
  * @since 30.08.2021
  */
-@Component("subjectRowMapper")
-public class SubjectRM implements RowMapper<Subject> {
+@Component("classroomRowMapper")
+public class ClassroomRowMapper implements RowMapper<Classroom> {
     /**
      * @param rs ResultSet
      * @param i  I
-     * @return Subject
+     * @return Classroom
      * @throws SQLException SQLException
      */
     @Override
-    public Subject mapRow(final ResultSet rs, final int i) throws SQLException {
-        return new Subject(
+    public Classroom mapRow(final ResultSet rs, final int i)
+        throws SQLException {
+        return new Classroom(
             rs.getLong("id"),
             rs.getString("name")
         );

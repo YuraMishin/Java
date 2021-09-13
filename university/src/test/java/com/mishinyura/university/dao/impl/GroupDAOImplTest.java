@@ -1,10 +1,12 @@
 package com.mishinyura.university.dao.impl;
 
+import com.mishinyura.university.dao.mappers.GroupRowMapper;
 import com.mishinyura.university.domain.Group;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.JdbcTest;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ActiveProfiles;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -17,14 +19,26 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @since 30.08.2021
  */
 @JdbcTest
-@ComponentScan
 @ActiveProfiles("test")
 class GroupDAOImplTest {
     /**
-     * GroupDAOImpl.
+     * JdbcTemplate.
      */
     @Autowired
+    JdbcTemplate jdbcTemplate;
+
+    /**
+     * GroupDAOImpl.
+     */
     private GroupDAOImpl groupDAO;
+
+    /**
+     * Before each test performs method.
+     */
+    @BeforeEach
+    void setup() {
+        groupDAO = new GroupDAOImpl(jdbcTemplate, new GroupRowMapper());
+    }
 
     /**
      * Tests findAll() method.
@@ -37,7 +51,7 @@ class GroupDAOImplTest {
         var groups = groupDAO.findAll();
 
         // then
-        assertThat(groups).hasSize(1);
+        assertThat(groups).hasSize(2);
         assertThat(groups.get(0).getId()).isEqualTo(1);
         assertThat(groups.get(0).getName()).isEqualTo("Group1");
     }
@@ -76,15 +90,15 @@ class GroupDAOImplTest {
     @Test
     void shouldSaveNewGroup() {
         // given
-        var newGroup = new Group("Group2");
+        var newGroup = new Group("Group3");
 
         // when
         var groupAdded = groupDAO.save(newGroup);
 
         // then
         assertThat(groupAdded).isInstanceOf(Group.class);
-        assertThat(groupAdded.getId()).isEqualTo(2L);
-        assertThat(groupAdded.getName()).isEqualTo("Group2");
+        assertThat(groupAdded.getId()).isEqualTo(3L);
+        assertThat(groupAdded.getName()).isEqualTo("Group3");
     }
 
     /**

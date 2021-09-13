@@ -65,6 +65,11 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
+        <!-- Template engine -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -86,7 +91,9 @@
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
                 <configuration>
-                    <url>jdbc:postgresql://localhost:5432/university?currentSchema=public</url>
+                    <url>
+                        jdbc:postgresql://localhost:5432/university?currentSchema=public
+                    </url>
                     <user>postgres</user>
                     <password>postgres</password>
                     <schemas>

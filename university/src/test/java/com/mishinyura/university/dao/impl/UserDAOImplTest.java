@@ -1,10 +1,12 @@
 package com.mishinyura.university.dao.impl;
 
+import com.mishinyura.university.dao.mappers.UserRowMapper;
 import com.mishinyura.university.domain.User;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.JdbcTest;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ActiveProfiles;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -17,14 +19,26 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @since 28.08.2021
  */
 @JdbcTest
-@ComponentScan
 @ActiveProfiles("test")
 class UserDAOImplTest {
     /**
-     * UserDAOImpl.
+     * JdbcTemplate.
      */
     @Autowired
+    JdbcTemplate jdbcTemplate;
+
+    /**
+     * UserDAOImpl.
+     */
     private UserDAOImpl userDAO;
+
+    /**
+     * Before each test performs method.
+     */
+    @BeforeEach
+    void setup() {
+        userDAO = new UserDAOImpl(jdbcTemplate, new UserRowMapper());
+    }
 
     /**
      * Tests findAll() method.

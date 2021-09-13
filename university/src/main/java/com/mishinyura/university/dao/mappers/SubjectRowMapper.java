@@ -1,6 +1,6 @@
 package com.mishinyura.university.dao.mappers;
 
-import com.mishinyura.university.domain.Group;
+import com.mishinyura.university.domain.Subject;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
@@ -8,23 +8,23 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Class GroupRM.
- * Implements group row mapper.
+ * Class SubjectRowMapper.
+ * Implements subject row mapper.
  *
  * @author Mishin Yura (mishin.inbox@gmail.com)
  * @since 30.08.2021
  */
-@Component("groupRowMapper")
-public class GroupRM implements RowMapper<Group> {
+@Component("subjectRowMapper")
+public class SubjectRowMapper implements RowMapper<Subject> {
     /**
      * @param rs ResultSet
      * @param i  I
-     * @return Group
+     * @return Subject
      * @throws SQLException SQLException
      */
     @Override
-    public Group mapRow(final ResultSet rs, final int i) throws SQLException {
-        return new Group(
+    public Subject mapRow(final ResultSet rs, final int i) throws SQLException {
+        return new Subject(
             rs.getLong("id"),
             rs.getString("name")
         );

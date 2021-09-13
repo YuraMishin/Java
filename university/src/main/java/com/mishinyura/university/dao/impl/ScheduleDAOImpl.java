@@ -1,8 +1,8 @@
 package com.mishinyura.university.dao.impl;
 
-import com.mishinyura.university.dao.GroupDAO;
-import com.mishinyura.university.dao.mappers.GroupRowMapper;
-import com.mishinyura.university.domain.Group;
+import com.mishinyura.university.dao.ScheduleDAO;
+import com.mishinyura.university.dao.mappers.ScheduleRowMapper;
+import com.mishinyura.university.domain.Schedule;
 import com.mishinyura.university.utils.DBQueries;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -14,24 +14,24 @@ import java.util.Objects;
 import java.util.Optional;
 
 /**
- * Class GroupDAOImpl.
- * Implements GroupDAO.
+ * Class ScheduleDAOImpl.
+ * Implements ScheduleDAO.
  *
  * @author Mishin Yura (mishin.inbox@gmail.com)
- * @since 30.08.2021
+ * @since 31.08.2021
  */
 @Repository
-public class GroupDAOImpl extends AbstractCrudDAO<Group, Long>
-    implements GroupDAO {
+public class ScheduleDAOImpl extends AbstractCrudDAO<Schedule, Long>
+    implements ScheduleDAO {
     /**
      * JdbcTemplate.
      */
     private final JdbcTemplate jdbcTemplate;
 
     /**
-     * GroupRowMapper.
+     * UserRowMapper.
      */
-    private final GroupRowMapper mapper;
+    private final ScheduleRowMapper mapper;
 
     /**
      * Constructor.
@@ -39,35 +39,35 @@ public class GroupDAOImpl extends AbstractCrudDAO<Group, Long>
      * @param jdbcTemplate JdbcTemplate
      * @param mapper       Mapper
      */
-    public GroupDAOImpl(
+    public ScheduleDAOImpl(
         final JdbcTemplate jdbcTemplate,
-        final GroupRowMapper mapper) {
+        final ScheduleRowMapper mapper) {
 
         this.jdbcTemplate = jdbcTemplate;
         this.mapper = mapper;
     }
 
     /**
-     * Method finds all groups.
+     * Method finds all schedule records.
      *
-     * @return List<Group>
+     * @return List<Schedule>
      */
-    public List<Group> findAll() {
+    public List<Schedule> findAll() {
         return this.jdbcTemplate.query(
-            DBQueries.ALL_GROUPS, mapper
+            DBQueries.ALL_SCHEDULES, mapper
         );
     }
 
     /**
-     * Method finds Group by id.
+     * Method finds schedule by id.
      *
      * @param id Id
-     * @return Optional<Group>
+     * @return Optional<Schedule>
      */
     @Override
-    public Optional<Group> findById(final Long id) {
+    public Optional<Schedule> findById(final Long id) {
         return this.jdbcTemplate.query(
-            DBQueries.GROUP_BY_ID,
+            DBQueries.SCHEDULE_BY_ID,
             rs -> {
                 if (rs.next()) {
                     return Optional.ofNullable(mapper.mapRow(rs, 1));
@@ -80,7 +80,7 @@ public class GroupDAOImpl extends AbstractCrudDAO<Group, Long>
     }
 
     /**
-     * Method deletes Group by id.
+     * Method deletes schedule by id.
      *
      * @param id Id
      * @return boolean
@@ -88,41 +88,45 @@ public class GroupDAOImpl extends AbstractCrudDAO<Group, Long>
     @Override
     public boolean deleteById(final Long id) {
         var params = new Object[]{id};
-        return this.jdbcTemplate.update(DBQueries.DELETE_GROUP, params) == 1;
+        return this.
+            jdbcTemplate.update(DBQueries.DELETE_SCHEDULE, params) == 1;
     }
 
     /**
-     * Method creates group.
+     * Method creates schedule.
      *
-     * @param group group
-     * @return group
+     * @param schedule Schedule
+     * @return Schedule
      */
     @Override
-    protected Group create(final Group group) {
+    protected Schedule create(final Schedule schedule) {
         var keyHolder = new GeneratedKeyHolder();
         this.jdbcTemplate.update(conn -> {
             var ps = conn.prepareStatement(
-                DBQueries.CREATE_GROUP,
+                DBQueries.CREATE_SCHEDULE,
                 Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, group.getName());
+            ps.setLong(1, schedule.getGroup().getId());
             return ps;
         }, keyHolder);
-        group.setId(Objects.requireNonNull(keyHolder.getKey()).longValue());
-        return group;
+        schedule.setId(Objects.requireNonNull(keyHolder.getKey()).longValue());
+        return schedule;
     }
 
     /**
-     * Method updates group.
+     * Method updates schedule.
      *
-     * @param group group
-     * @return group
+     * @param schedule Schedule
+     * @return Schedule
      */
     @Override
-    protected Group update(final Group group) {
-        var params = new Object[]{group.getName(), group.getId()};
-        var result = this.jdbcTemplate.update(DBQueries.UPDATE_GROUP, params);
+    protected Schedule update(final Schedule schedule) {
+        var params = new Object[]{
+            schedule.getGroup().getId(), schedule.getId()
+        };
+        var result = this
+            .jdbcTemplate.update(DBQueries.UPDATE_SCHEDULE, params);
         if (result == 1) {
-            return group;
+            return schedule;
         } else {
             throw new RuntimeException("Exception caught while updating");
         }

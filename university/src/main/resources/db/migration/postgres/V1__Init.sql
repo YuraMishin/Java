@@ -13,8 +13,8 @@ create table groups
 create table time
 (
     id        bigserial primary key,
-    startTime time,
-    endTime   time
+    startTime time unique,
+    endTime   time unique
 );
 
 create table classrooms
@@ -32,18 +32,17 @@ create table roles
 create table schedule
 (
     id           bigserial primary key,
-    group_id     bigint references groups (id),
+    group_id     bigint references groups (id) on delete cascade,
     subject_id   bigint references subjects (id),
-    day          smallint,
+    day          int,
     time_id      bigint references time (id),
-    classroom_id bigint references classrooms (id),
-    role_id      bigint references roles (id)
+    classroom_id bigint references classrooms (id)
 );
 
 create table users
 (
     id   bigserial primary key,
-    name varchar(50)
+    name varchar(50) unique
 );
 
 create table user_role

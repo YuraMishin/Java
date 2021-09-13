@@ -1,10 +1,9 @@
 package com.mishinyura.university.dao.impl;
 
 import com.mishinyura.university.dao.ClassroomDAO;
-import com.mishinyura.university.dao.mappers.ClassroomRM;
+import com.mishinyura.university.dao.mappers.ClassroomRowMapper;
 import com.mishinyura.university.domain.Classroom;
 import com.mishinyura.university.utils.DBQueries;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Repository;
@@ -27,14 +26,26 @@ public class ClassroomDAOImpl extends AbstractCrudDAO<Classroom, Long>
     /**
      * JdbcTemplate.
      */
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     /**
-     * ClassroomRM.
+     * ClassroomRowMapper.
      */
-    @Autowired
-    private ClassroomRM classroomRM;
+    private final ClassroomRowMapper mapper;
+
+    /**
+     * Constructor.
+     *
+     * @param jdbcTemplate JdbcTemplate
+     * @param mapper       Mapper
+     */
+    public ClassroomDAOImpl(
+        final JdbcTemplate jdbcTemplate,
+        final ClassroomRowMapper mapper) {
+
+        this.jdbcTemplate = jdbcTemplate;
+        this.mapper = mapper;
+    }
 
     /**
      * Method finds all classrooms.
@@ -43,7 +54,7 @@ public class ClassroomDAOImpl extends AbstractCrudDAO<Classroom, Long>
      */
     public List<Classroom> findAll() {
         return this.jdbcTemplate.query(
-            DBQueries.ALL_CLASSROOMS, classroomRM
+            DBQueries.ALL_CLASSROOMS, mapper
         );
     }
 
@@ -59,7 +70,7 @@ public class ClassroomDAOImpl extends AbstractCrudDAO<Classroom, Long>
             DBQueries.CLASSROOM_BY_ID,
             rs -> {
                 if (rs.next()) {
-                    return Optional.ofNullable(classroomRM.mapRow(rs, 1));
+                    return Optional.ofNullable(mapper.mapRow(rs, 1));
                 } else {
                     return Optional.empty();
                 }

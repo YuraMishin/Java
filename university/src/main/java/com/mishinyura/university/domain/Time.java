@@ -10,11 +10,7 @@ import java.util.Objects;
  * @author Mishin Yura (mishin.inbox@gmail.com)
  * @since 27.08.2021
  */
-public class Time {
-    /**
-     * Id.
-     */
-    private Long id;
+public class Time extends Entity<Long> {
     /**
      * Start.
      */
@@ -26,8 +22,54 @@ public class Time {
 
     /**
      * Constructor.
+     *
+     * @param start Start time
+     * @param end   End time
      */
-    public Time() {
+    public Time(final LocalTime start, final LocalTime end) {
+        this.start = start;
+        this.end = end;
+    }
+
+    /**
+     * Constructor.
+     *
+     * @param id    Id
+     * @param start Start time
+     * @param end   End time
+     */
+    public Time(final Long id, final LocalTime start, final LocalTime end) {
+        this.id = id;
+        this.start = start;
+        this.end = end;
+    }
+
+    /**
+     * @return start
+     */
+    public LocalTime getStart() {
+        return start;
+    }
+
+    /**
+     * @param start start
+     */
+    public void setStart(final LocalTime start) {
+        this.start = start;
+    }
+
+    /**
+     * @return end
+     */
+    public LocalTime getEnd() {
+        return end;
+    }
+
+    /**
+     * @param end end
+     */
+    public void setEnd(final LocalTime end) {
+        this.end = end;
     }
 
     /**

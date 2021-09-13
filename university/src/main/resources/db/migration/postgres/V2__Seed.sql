@@ -1,17 +1,17 @@
 insert into users(name)
-values ('User1');
+values ('Gusev Anton');
 
 insert into subjects(name)
-values ('Subject1'),
-       ('Subject2');
+values ('Algebra'),
+       ('Geometry');
 
 insert into groups(name)
-values ('Group1'),
-       ('Group2');
+values ('1A'),
+       ('1B');
 
 insert into classrooms(name)
-values ('Classroom1'),
-       ('Classroom2');
+values ('1-101'),
+       ('2-202');
 
 insert into time (starttime, endtime)
 values ('08:00:00', '08:40:00'),

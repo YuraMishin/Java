@@ -1,8 +1,8 @@
 package com.mishinyura.university.dao.impl;
 
-import com.mishinyura.university.dao.UserDAO;
-import com.mishinyura.university.dao.mappers.UserRowMapper;
-import com.mishinyura.university.domain.User;
+import com.mishinyura.university.dao.TimeDAO;
+import com.mishinyura.university.dao.mappers.TimeRowMapper;
+import com.mishinyura.university.domain.Time;
 import com.mishinyura.university.utils.DBQueries;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -14,24 +14,24 @@ import java.util.Objects;
 import java.util.Optional;
 
 /**
- * Class UserDAOImpl.
- * Implements UserDAO.
+ * Class TimeDAOImpl.
+ * Implements TimeDAO.
  *
  * @author Mishin Yura (mishin.inbox@gmail.com)
- * @since 27.08.2021
+ * @since 30.08.2021
  */
 @Repository
-public class UserDAOImpl extends AbstractCrudDAO<User, Long>
-    implements UserDAO {
+public class TimeDAOImpl extends AbstractCrudDAO<Time, Long>
+    implements TimeDAO {
     /**
      * JdbcTemplate.
      */
     private final JdbcTemplate jdbcTemplate;
 
     /**
-     * UserRowMapper.
+     * TimeRowMapper.
      */
-    private final UserRowMapper mapper;
+    private final TimeRowMapper mapper;
 
     /**
      * Constructor.
@@ -39,35 +39,35 @@ public class UserDAOImpl extends AbstractCrudDAO<User, Long>
      * @param jdbcTemplate JdbcTemplate
      * @param mapper       Mapper
      */
-    public UserDAOImpl(
+    public TimeDAOImpl(
         final JdbcTemplate jdbcTemplate,
-        final UserRowMapper mapper) {
+        final TimeRowMapper mapper) {
 
         this.jdbcTemplate = jdbcTemplate;
         this.mapper = mapper;
     }
 
     /**
-     * Method finds all users.
+     * Method finds all times.
      *
-     * @return List<User>
+     * @return List<Time>
      */
-    public List<User> findAll() {
+    public List<Time> findAll() {
         return this.jdbcTemplate.query(
-            DBQueries.ALL_USERS, mapper
+            DBQueries.ALL_TIMES, mapper
         );
     }
 
     /**
-     * Method finds user by id.
+     * Method finds time by id.
      *
      * @param id Id
-     * @return Optional<User>
+     * @return Optional<Time>
      */
     @Override
-    public Optional<User> findById(final Long id) {
+    public Optional<Time> findById(final Long id) {
         return this.jdbcTemplate.query(
-            DBQueries.USER_BY_ID,
+            DBQueries.TIME_BY_ID,
             rs -> {
                 if (rs.next()) {
                     return Optional.ofNullable(mapper.mapRow(rs, 1));
@@ -80,44 +80,7 @@ public class UserDAOImpl extends AbstractCrudDAO<User, Long>
     }
 
     /**
-     * Method creates user.
-     *
-     * @param user User
-     * @return User
-     */
-    @Override
-    protected User create(final User user) {
-        var keyHolder = new GeneratedKeyHolder();
-        this.jdbcTemplate.update(conn -> {
-            var ps = conn.prepareStatement(
-                DBQueries.CREATE_USER,
-                Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, user.getName());
-            return ps;
-        }, keyHolder);
-        user.setId(Objects.requireNonNull(keyHolder.getKey()).longValue());
-        return user;
-    }
-
-    /**
-     * Method updates user.
-     *
-     * @param user User
-     * @return User
-     */
-    @Override
-    protected User update(final User user) {
-        var params = new Object[]{user.getName(), user.getId()};
-        var result = this.jdbcTemplate.update(DBQueries.UPDATE_USER, params);
-        if (result == 1) {
-            return user;
-        } else {
-            throw new RuntimeException("Exception caught while updating");
-        }
-    }
-
-    /**
-     * Method deletes user by id.
+     * Method deletes time by id.
      *
      * @param id Id
      * @return boolean
@@ -125,6 +88,44 @@ public class UserDAOImpl extends AbstractCrudDAO<User, Long>
     @Override
     public boolean deleteById(final Long id) {
         var params = new Object[]{id};
-        return this.jdbcTemplate.update(DBQueries.DELETE_USER, params) == 1;
+        return this.jdbcTemplate.update(DBQueries.DELETE_TIME, params) == 1;
+    }
+
+    /**
+     * Method creates time.
+     *
+     * @param time time
+     * @return time
+     */
+    @Override
+    protected Time create(final Time time) {
+        var keyHolder = new GeneratedKeyHolder();
+        this.jdbcTemplate.update(conn -> {
+            var ps = conn.prepareStatement(
+                DBQueries.CREATE_TIME,
+                Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, time.getStart().toString());
+            ps.setString(2, time.getEnd().toString());
+            return ps;
+        }, keyHolder);
+        time.setId(Objects.requireNonNull(keyHolder.getKey()).longValue());
+        return time;
+    }
+
+    /**
+     * Method updates time.
+     *
+     * @param time time
+     * @return time
+     */
+    @Override
+    protected Time update(final Time time) {
+        var params = new Object[]{time.getStart(), time.getEnd(), time.getId()};
+        var result = this.jdbcTemplate.update(DBQueries.UPDATE_TIME, params);
+        if (result == 1) {
+            return time;
+        } else {
+            throw new RuntimeException("Exception caught while updating");
+        }
     }
 }
