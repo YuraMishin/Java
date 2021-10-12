@@ -67,6 +67,7 @@ Welcome to Yura Mishin's Java repository.
 + [JUnit Best Practices Guide](https://howtodoinjava.com/best-practices/unit-testing-best-practices-junit-reference-guide/#not-find-bugs)
 + [JUnit и фреймворк Mockito](http://java-online.ru/junit-mockito.xhtml)
 + [Guide to JUnit 5 Parameterized Tests](https://www.baeldung.com/parameterized-tests-junit-5)
++ [JUnit vs TestNG](https://trofimovdigital.ru/blog/junit-vs-testng)
 
 ## Mockito
 
@@ -95,6 +96,9 @@ Welcome to Yura Mishin's Java repository.
 + [Calculate Date/Time Difference](https://www.epochconverter.com/date-difference)
 + [Days Calculator: Days Between Two Dates](https://www.timeanddate.com/date/durationresult.html?d1=16&m1=12&y1=1984&d2=9&m2=9&y2=2014&h1=7&i1=45&s1=55&h2=19&i2=46&s2=45)
 
+## Regular expression
++ [RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
+
 ## Database
 
 + [PostgreSQL documentation](https://www.postgresql.org/docs/)
@@ -118,6 +122,8 @@ Welcome to Yura Mishin's Java repository.
 + [HikariCP](https://github.com/brettwooldridge/HikariCP)
 + [SQL Translation](https://www.jooq.org/translate/)
 + [Упражнения по SQL](https://www.sql-ex.com/)
++ [Oracle Live SQL](https://livesql.oracle.com/)
++ [SQLiteStudio](https://sqlitestudio.pl/)
 
 ## Hibernate ORM.
 
