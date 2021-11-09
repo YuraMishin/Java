@@ -18,7 +18,7 @@ public final class Solution implements IntPredicate {
     @Override
     public boolean test(final int value) {
         var result = IntStream
-            .range(1, (value / 2) + 1)
+            .range(1, ((int) Math.sqrt(value)) + 1)
             .filter(i -> value % i == 0)
             .count();
         return result == 1;
