@@ -12,6 +12,7 @@ Welcome to Yura Mishin's Java repository.
 
 + [Google](https://www.google.com/)
 + [Stackoverflow](https://stackoverflow.com/)
++ [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey/)
 + [Online Java compiler](https://repl.it/languages/java)
 + [Pastebin.com](https://pastebin.com/)
 + [JDK. Java Development Kit](https://www.oracle.com/java/technologies/javase-downloads.html)
@@ -31,6 +32,9 @@ Welcome to Yura Mishin's Java repository.
 + [Awesome Java. Libhunt](https://java.libhunt.com/)
 + [Source code snapshot](https://carbon.now.sh/)
 + [javatpoint](https://www.javatpoint.com/)
++ [Java Tutorial](https://www.tutorialspoint.com/java/)
++ [Geeksforgeeks. Java](https://www.geeksforgeeks.org/java/?ref=grb)
++ [Javenue](http://www.javenue.info/themes/java)
 + [Zetcode.Java](https://zetcode.com/all/#java)
 + [Unicode Character Table](https://unicode-table.com/en/)
 + [Zulip](https://zulip.com/)
@@ -39,6 +43,9 @@ Welcome to Yura Mishin's Java repository.
 + [Архитектура логирования](https://habr.com/ru/post/135242/)
 + [Правильное логгирование в Microsoft .NET Framework](https://habr.com/ru/post/98638/)
 + [Spring Boot SLF4j Logback example](https://mkyong.com/spring-boot/spring-boot-slf4j-logging-example/)
++ [Java master](https://java-master.com/)
++ [Java Master YT](https://www.youtube.com/c/Javamaster-tutorials/videos)
++ [Java c DMDev](https://www.youtube.com/c/dmdev/videos)
 
 ## GIT
 
@@ -47,6 +54,8 @@ Welcome to Yura Mishin's Java repository.
 + [GitHowTo](https://githowto.com/ru)
 + [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
 + [GIT PURR! Git Commands Explained with Cats!](https://girliemac.com/blog/2017/12/26/git-purr/)
++ [Gitignore](https://gitignore.io/)
++ [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
 
 ## JUnit
 
@@ -124,6 +133,14 @@ Welcome to Yura Mishin's Java repository.
 + [Упражнения по SQL](https://www.sql-ex.com/)
 + [Oracle Live SQL](https://livesql.oracle.com/)
 + [SQLiteStudio](https://sqlitestudio.pl/)
++ [dbdiagram.io - Database Relationship Diagrams Design Tool](https://dbdiagram.io/)
++ [DrawSQL - Database schema diagrams](https://drawsql.app/)
++ [SQL Database Modeler - SQL Database Modeler, Entity Relationship Diagram](https://sqldbm.com/Home/)
++ [QuickDBD](https://www.quickdatabasediagrams.com/)
++ [WWW SQL Designer](https://ondras.zarovi.cz/sql/demo/)
++ [Sequel Pro](https://www.sequelpro.com/)
++ [DbVisualizer](https://www.dbvis.com/download/)
++ [SQL Tutorial](https://www.w3schools.com/sql/default.asp)
 
 ## Hibernate ORM.
 
@@ -153,6 +170,8 @@ Welcome to Yura Mishin's Java repository.
 + [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.oreilly.com/library/view/design-patterns-elements/0201633612/)
 + [Паттерны проектирования](https://refactoring.guru/)
 + [Design patterns implemented in Java](https://github.com/iluwatar/java-design-patterns)
++ [Builder Design Patterns in Java](https://medium.com/@ajinkyabadve/builder-design-patterns-in-java-1ffb12648850)
++ [Singletons in Java](https://www.baeldung.com/java-singleton)
 + [Test-driven development / TDD](https://en.wikipedia.org/wiki/Test-driven_development)
 + [Agile](http://agilemanifesto.org/)
 + [SOLID](https://en.wikipedia.org/wiki/SOLID)
@@ -167,8 +186,15 @@ Welcome to Yura Mishin's Java repository.
 
 + [Web Framework Benchmarks](https://www.techempower.com/benchmarks/)
 + [Bootstrap](https://getbootstrap.com/)
-+ [Test your front-end against a real API](https://reqres.in/)
++ [REST API Tutorial](https://www.restapitutorial.com/)
++ [REST API Tutorial](https://restfulapi.net/)
++ [JSON.org](https://www.json.org/json-en.html)
++ [jsonschema2pojo](https://www.jsonschema2pojo.org/)
++ [REQ | RES](https://reqres.in/)
 + [Swagger Petstore](https://petstore.swagger.io/)
++ [JSON Editor](https://jsoneditoronline.org/)
++ [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/)
++ [Axis TCP Monitor Plugin](https://plugins.jetbrains.com/plugin/154-axis-tcp-monitor-plugin)
 
 ## Spring Framework
 
@@ -177,7 +203,11 @@ Welcome to Yura Mishin's Java repository.
 + [Spring Boot Tutorial](https://www.tutorialspoint.com/spring_boot/index.htm)
 + [Udemy. John Thompson. Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/)
 + [John Thompson. Github](https://github.com/springframeworkguru)
++ [Spring Framework Guru Pet Clinic](https://github.com/springframeworkguru/sfg-pet-clinic)
 + [Spring Framework Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/)
++ [Spring PetClinic Sample Application](https://github.com/spring-projects/spring-petclinic)
++ [Spring Petclinic community](https://github.com/spring-petclinic)
++ [Text to ASCII Art Generator (TAAG)](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
 ## Books
 
@@ -192,6 +222,7 @@ Welcome to Yura Mishin's Java repository.
 + [97 Things Every Programmer Should Know](https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/)
 + [Teach Yourself Programming in Ten Years by Peter Norvig](https://norvig.com/21-days.html)
 + [OCP Oracle Certified Professional Java SE 11 Programmer I Study Guide: Exam 1Z0-815](https://www.amazon.com/Oracle-Certified-Professional-Programmer-Study/dp/1119584701)
++ [Практические задачи по Java — для курсов и прочих занятий](https://habr.com/ru/post/440436/)
 
 ## Add-ons
 
@@ -201,3 +232,19 @@ Welcome to Yura Mishin's Java repository.
 + [Project Lombok](https://projectlombok.org/)
 + [REST Assured](https://rest-assured.io/)
 + [JSON2POJO](https://json2csharp.com/json-to-pojo)
++ [ShareX](https://getsharex.com/)
+
+## QA
++ [testbase.ru](http://testbase.ru/)
++ [postman.com](https://www.postman.com/)
++ [soapui.org](https://www.soapui.org/)
++ [Top design patterns for test automation frameworks](https://www.devbridge.com/articles/top-design-pattern-test-automation-frameworks/)
++ [Page Object Model Framework with Java and WebDriver](https://devqa.io/page-object-framework-java-webdriver/)
++ [Selenium WebDriver – How To Design Page Objects In Fluent Style](https://www.vinsguru.com/selenium-webdriver-how-to-design-page-objects-in-fluent-style/)
++ [REST-assured](https://rest-assured.io/)
++ [Selenium WebDriver – Метрика тестов в реальном времени с использованием Grafana и InfluxDB](https://habr.com/ru/company/otus/blog/452908/)
++ [Механизм правил в JUnit](http://blog.qatools.ru/junit/junit-rules-tutorial)
++ [Log4j 2 API](https://logging.apache.org/log4j/2.x/manual/api.html)
++ [base64encode.org](https://www.base64encode.org/)
++ [Lee Copeland. A Practitioner's Guide to Software Test Design](https://www.amazon.com/Practitioners-Guide-Software-Test-Design/dp/158053791X)
++ [BDD. Cucumber](https://cucumber.io/)
