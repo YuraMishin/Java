@@ -14,15 +14,16 @@ Welcome to Yura Mishin's Java repository.
 + [Stackoverflow](https://stackoverflow.com/)
 + [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey/)
 + [Online Java compiler](https://repl.it/languages/java)
++ [Online Dashboard](https://miro.com/)
 + [Pastebin.com](https://pastebin.com/)
 + [JDK. Java Development Kit](https://www.oracle.com/java/technologies/javase-downloads.html)
 + [Java SE Documentation](https://docs.oracle.com/en/java/javase/)
 + [Oracle. The Java Tutorials](https://docs.oracle.com/javase/tutorial/)
 + [IntelliJ IDEA. Get IDE](https://www.jetbrains.com/idea/)
-+ [Apache Maven](https://maven.apache.org/)
-+ [Maven Repository: Top Projects at Maven Repository](https://mvnrepository.com/popular)
++ [Chocolatey](https://community.chocolatey.org/)
 + [Mkyong.com – Java tutorials, examples and articles](https://mkyong.com/)
 + [Baeldung | Java, Spring and Web Development tutorials](https://www.baeldung.com/)
++ [Java-online.ru](https://java-online.ru/)
 + [Java Programming for Complete Beginners - Learn in 250 Steps](https://courses.in28minutes.com/p/java-programming-for-complete-beginners-learn-in-250-steps)
 + [in28minutes/java-cheat-sheet](https://github.com/in28minutes/java-cheat-sheet)
 + [in28minutes/java-a-course-for-beginners](https://github.com/in28minutes/java-a-course-for-beginners)
@@ -46,6 +47,14 @@ Welcome to Yura Mishin's Java repository.
 + [Java master](https://java-master.com/)
 + [Java Master YT](https://www.youtube.com/c/Javamaster-tutorials/videos)
 + [Java c DMDev](https://www.youtube.com/c/dmdev/videos)
++ [VClock Timer](https://vclock.com/)
++ [Modern Java - A Guide to Java 8](https://github.com/winterbe/java8-tutorial)
+
+## Maven
++ [Apache Maven](https://maven.apache.org/)
++ [Apache Maven Wrapper](https://maven.apache.org/wrapper/download.cgi)
++ [Maven Repository: Top Projects at Maven Repository](https://mvnrepository.com/popular)
++ [Maven DMDEV](https://youtu.be/QpaWl2-BsMY?list=PLnh8EajVFTl5fusY9MRBEOoLjbv8Trms5)
 
 ## GIT
 
@@ -93,11 +102,17 @@ Welcome to Yura Mishin's Java repository.
 + [Robert Lafore. Data Structures and Algorithms in Java](https://www.amazon.com/Data-Structures-Algorithms-Java-2nd/dp/0672324539)
 + [Aditya Bhargava. Grokking Algorithms](https://www.amazon.com/gp/product/1617292230/)
 + [leetcode.com](https://leetcode.com/)
++ [Big O нотация: что это такое и почему ее обязательно нужно знать каждому программисту](https://proglib.io/p/big-o-notaciya-chto-eto-takoe-i-pochemu-ee-obyazatelno-nuzhno-znat-kazhdomu-programmistu-2022-02-17)
++ [The Algorithms - Java](https://github.com/TheAlgorithms/Java)
++ [Сравнение 6 алгоритмов сортировки](https://proglib.io/p/sravnenie-6-algoritmov-sortirovki-puzyrkom-vyborom-kuchey-vstavkami-sliyaniem-i-bystraya-2022-02-08)
 
 ## Java Stream API
 
 + [Шпаргалка Java программиста. Java Stream API](https://habr.com/ru/company/luxoft/blog/270383/)
 + [Stream API](https://metanit.com/java/tutorial/10.1.php)
++ [GeekBrains: "Java Stream API" - 30.04.20](https://www.youtube.com/watch?v=LHopuHzyFEs)
++ [Сергей Куксенко — Stream API, часть 1](https://www.youtube.com/watch?v=O8oN4KSZEXE&ab_channel=JUG.ru)
++ [Lambda-выражения в Java](https://habr.com/ru/post/512730/)
 
 ## Date/Time
 
@@ -141,6 +156,10 @@ Welcome to Yura Mishin's Java repository.
 + [Sequel Pro](https://www.sequelpro.com/)
 + [DbVisualizer](https://www.dbvis.com/download/)
 + [SQL Tutorial](https://www.w3schools.com/sql/default.asp)
++ [PostgreSQL Exercises](https://pgexercises.com/)
++ [Руководство по SQL для начинающих](https://proglib.io/p/rukovodstvo-po-sql-dlya-nachinayushchih-chast-1-sozdanie-bazy-dannyh-tablic-i-ustanovka-svyazey-mezhdu-tablicami-2022-02-07)
++ [Dbeaver](https://dbeaver.io/download/)
++ [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
 ## Hibernate ORM.
 
@@ -195,6 +214,7 @@ Welcome to Yura Mishin's Java repository.
 + [JSON Editor](https://jsoneditoronline.org/)
 + [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/)
 + [Axis TCP Monitor Plugin](https://plugins.jetbrains.com/plugin/154-axis-tcp-monitor-plugin)
++ [Public APIs](https://github.com/public-apis/public-apis)
 
 ## Spring Framework
 
@@ -208,6 +228,7 @@ Welcome to Yura Mishin's Java repository.
 + [Spring PetClinic Sample Application](https://github.com/spring-projects/spring-petclinic)
 + [Spring Petclinic community](https://github.com/spring-petclinic)
 + [Text to ASCII Art Generator (TAAG)](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
++ [WebJars](https://www.webjars.org/)
 
 ## Books
 
@@ -233,6 +254,9 @@ Welcome to Yura Mishin's Java repository.
 + [REST Assured](https://rest-assured.io/)
 + [JSON2POJO](https://json2csharp.com/json-to-pojo)
 + [ShareX](https://getsharex.com/)
++ [Apache Commons](https://commons.apache.org/)
++ [Google Guava](https://github.com/google/guava)
++ [Apache POI - the Java API for Microsoft Documents](https://poi.apache.org/)
 
 ## QA
 + [testbase.ru](http://testbase.ru/)
@@ -248,3 +272,8 @@ Welcome to Yura Mishin's Java repository.
 + [base64encode.org](https://www.base64encode.org/)
 + [Lee Copeland. A Practitioner's Guide to Software Test Design](https://www.amazon.com/Practitioners-Guide-Software-Test-Design/dp/158053791X)
 + [BDD. Cucumber](https://cucumber.io/)
+
+## Job
++ [Ответы на вопросы на собеседование ООП](https://jsehelper.blogspot.com/2016/01/blog-post_9.html)
++ [Eugene Suleimanov](https://www.youtube.com/c/EugeneSuleimanov/videos)
++ [Interviews](https://github.com/kdn251/interviews)
