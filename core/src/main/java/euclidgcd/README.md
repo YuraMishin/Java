@@ -1,0 +1,1 @@
+# Finding the greatest common divisor of two natural numbers (Euclidean algorithm)

@@ -126,6 +126,7 @@ Welcome to Yura Mishin's Java repository.
 ## Database
 
 + [PostgreSQL documentation](https://www.postgresql.org/docs/)
++ [PostgreSQL documentation Ru](https://postgrespro.ru/docs/enterprise/13/)
 + [sqlzoo.net](https://sqlzoo.net/)
 + [Руководство по проектированию реляционных баз данных](https://habr.com/ru/post/193136/)
 + [Head First SQL](http://shop.oreilly.com/product/9780596526849.do)
@@ -160,6 +161,9 @@ Welcome to Yura Mishin's Java repository.
 + [Руководство по SQL для начинающих](https://proglib.io/p/rukovodstvo-po-sql-dlya-nachinayushchih-chast-1-sozdanie-bazy-dannyh-tablic-i-ustanovka-svyazey-mezhdu-tablicami-2022-02-07)
 + [Dbeaver](https://dbeaver.io/download/)
 + [MySQL Workbench](https://www.mysql.com/products/workbench/)
+
+## NoSQL
++ [MongoDB](https://www.mongodb.com/)
 
 ## Hibernate ORM.
 
