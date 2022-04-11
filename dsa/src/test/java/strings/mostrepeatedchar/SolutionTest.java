@@ -63,4 +63,20 @@ class SolutionTest {
         // then
         assertThat(actual).isEqualTo(expected);
     }
+
+    /**
+     * Tests getMaxOccuringCharV2() method.
+     */
+    @Test
+    void shouldReturnCharV2() {
+        // given
+        String str = "Hello World";
+        String expected = "l";
+
+        // when
+        String actual = SOLUTION.getMaxOccuringCharV2(str);
+
+        // then
+        assertThat(actual).isEqualTo(expected);
+    }
 }
