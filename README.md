@@ -50,6 +50,12 @@ Welcome to Yura Mishin's Java repository.
 + [VClock Timer](https://vclock.com/)
 + [Modern Java - A Guide to Java 8](https://github.com/winterbe/java8-tutorial)
 
+## Tools
++ [Miro Board](https://miro.com/)
+
+## DevOps
++ [How to Run Java Inside Docker](https://sematext.com/blog/docker-java-tutorial/)
+
 ## Maven
 + [Apache Maven](https://maven.apache.org/)
 + [Apache Maven Wrapper](https://maven.apache.org/wrapper/download.cgi)
@@ -113,6 +119,8 @@ Welcome to Yura Mishin's Java repository.
 + [GeekBrains: "Java Stream API" - 30.04.20](https://www.youtube.com/watch?v=LHopuHzyFEs)
 + [Сергей Куксенко — Stream API, часть 1](https://www.youtube.com/watch?v=O8oN4KSZEXE&ab_channel=JUG.ru)
 + [Lambda-выражения в Java](https://habr.com/ru/post/512730/)
++ [Что нужно знать о Java Stream API](https://tproger.ru/articles/chto-nuzhno-znat-o-java-stream-api/)
++ [Stream API (Программирование на Java)](https://www.youtube.com/watch?v=FCT2jbAs_uA&ab_channel=ComputerScienceCenter)
 
 ## Date/Time
 
@@ -220,6 +228,9 @@ Welcome to Yura Mishin's Java repository.
 + [Axis TCP Monitor Plugin](https://plugins.jetbrains.com/plugin/154-axis-tcp-monitor-plugin)
 + [Public APIs](https://github.com/public-apis/public-apis)
 
+## Servlets
++ [Apache Tomcat](https://tomcat.apache.org/)
+
 ## Spring Framework
 
 + [Spring Initializr](https://start.spring.io/)
@@ -233,6 +244,12 @@ Welcome to Yura Mishin's Java repository.
 + [Spring Petclinic community](https://github.com/spring-petclinic)
 + [Text to ASCII Art Generator (TAAG)](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 + [WebJars](https://www.webjars.org/)
++ [Spring profiles](https://www.baeldung.com/spring-profiles)
+
+## JavaFX
++ [JavaFX в IntelliJ IDEA](https://metanit.com/java/javafx/1.8.php)
++ [OpenJFX](https://openjfx.io/openjfx-docs/#install-javafx)
++ [Gluon JavaFX](https://gluonhq.com/products/javafx/)
 
 ## Books
 
