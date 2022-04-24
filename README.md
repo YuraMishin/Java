@@ -49,6 +49,7 @@ Welcome to Yura Mishin's Java repository.
 + [Java c DMDev](https://www.youtube.com/c/dmdev/videos)
 + [VClock Timer](https://vclock.com/)
 + [Modern Java - A Guide to Java 8](https://github.com/winterbe/java8-tutorial)
++ [Awesome bits](https://github.com/keon/awesome-bits)
 
 ## Tools
 + [Miro Board](https://miro.com/)
@@ -71,6 +72,9 @@ Welcome to Yura Mishin's Java repository.
 + [GIT PURR! Git Commands Explained with Cats!](https://girliemac.com/blog/2017/12/26/git-purr/)
 + [Gitignore](https://gitignore.io/)
 + [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
++ [Beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile)
++ [GitHub Skills](https://skills.github.com/)
++ [Git Explorer](https://gitexplorer.com/)
 
 ## JUnit
 
@@ -111,6 +115,8 @@ Welcome to Yura Mishin's Java repository.
 + [Big O нотация: что это такое и почему ее обязательно нужно знать каждому программисту](https://proglib.io/p/big-o-notaciya-chto-eto-takoe-i-pochemu-ee-obyazatelno-nuzhno-znat-kazhdomu-programmistu-2022-02-17)
 + [The Algorithms - Java](https://github.com/TheAlgorithms/Java)
 + [Сравнение 6 алгоритмов сортировки](https://proglib.io/p/sravnenie-6-algoritmov-sortirovki-puzyrkom-vyborom-kuchey-vstavkami-sliyaniem-i-bystraya-2022-02-08)
++ [Крупнейшая библиотека алгоритмов с открытым исходным кодом на GitHub](https://the-algorithms.com/ru)
++ [Visualising data structures and algorithms through animation](https://visualgo.net/en/)
 
 ## Java Stream API
 
@@ -194,6 +200,7 @@ Welcome to Yura Mishin's Java repository.
 + [Clean Code by Robert C. Martin](https://www.oreilly.com/library/view/clean-code/9780136083238/)
 + [Bob Martin. Solid principles of object oriented and agile design](https://www.youtube.com/watch?v=zHiWqnTWsn4)
 + [Чистый код (clean code) или Как помыть кота](https://www.youtube.com/watch?v=otrfSgeK3JI)
++ [Почему нельзя возвращать NULL?](https://youtu.be/QwycPnpp6uQ)
 
 ## Patterns
 
@@ -298,3 +305,6 @@ Welcome to Yura Mishin's Java repository.
 + [Ответы на вопросы на собеседование ООП](https://jsehelper.blogspot.com/2016/01/blog-post_9.html)
 + [Eugene Suleimanov](https://www.youtube.com/c/EugeneSuleimanov/videos)
 + [Interviews](https://github.com/kdn251/interviews)
++ [Java собеседование с ответами (тестовое)](https://www.youtube.com/watch?v=wupkhc_su8g&ab_channel=Terry)
++ [Собеседование Java Spring - Разбор вопросов с собеседований на Java Developer](https://www.youtube.com/watch?v=_7riaBIOxbM&ab_channel=MadBrains)
++ [Junior - разработчик. Как пройти собеседование?](https://www.youtube.com/watch?v=eF9AuxI43Dc&t=3s&ab_channel=alishev)
