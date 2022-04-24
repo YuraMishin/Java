@@ -1,0 +1,2 @@
+# Factorial computing algorithm.
+
