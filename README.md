@@ -56,6 +56,7 @@ Welcome to Yura Mishin's Java repository.
 
 ## DevOps
 + [How to Run Java Inside Docker](https://sematext.com/blog/docker-java-tutorial/)
++ [Docker Cheat Sheet for Spring Developers](https://springframework.guru/docker-cheat-sheet-for-spring-devlopers/)
 
 ## Maven
 + [Apache Maven](https://maven.apache.org/)
@@ -252,6 +253,7 @@ Welcome to Yura Mishin's Java repository.
 + [Text to ASCII Art Generator (TAAG)](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 + [WebJars](https://www.webjars.org/)
 + [Spring profiles](https://www.baeldung.com/spring-profiles)
++ [BCryptPasswordEncoder](https://bcrypt-generator.com/)
 
 ## JavaFX
 + [JavaFX в IntelliJ IDEA](https://metanit.com/java/javafx/1.8.php)
