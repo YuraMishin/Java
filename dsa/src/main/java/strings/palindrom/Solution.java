@@ -24,4 +24,16 @@ public class Solution {
         }
         return true;
     }
+
+    /**
+     * Method checks palindrome.
+     *
+     * @param word Word.
+     * @return Boolean.
+     */
+    public final boolean isPalindromeV2(final String word) {
+        var t = word.replaceAll("\\W", "");
+        var s = new StringBuilder(t).reverse();
+        return t.equalsIgnoreCase(s.toString());
+    }
 }

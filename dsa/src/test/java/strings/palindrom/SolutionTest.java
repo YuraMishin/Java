@@ -46,4 +46,34 @@ class SolutionTest {
         // then
         assertThat(actual).isFalse();
     }
+
+    /**
+     * Tests isPalindromeV2() method.
+     */
+    @Test
+    void shouldReturnTrue2() {
+        // given
+        String word = "madam";
+
+        // when
+        boolean actual = SOLUTION.isPalindromeV2(word);
+
+        // then
+        assertThat(actual).isTrue();
+    }
+
+    /**
+     * Tests isPalindromeV2() method.
+     */
+    @Test
+    void shouldReturnFalse2() {
+        // given
+        String word = "Java";
+
+        // when
+        boolean actual = SOLUTION.isPalindromeV2(word);
+
+        // then
+        assertThat(actual).isFalse();
+    }
 }

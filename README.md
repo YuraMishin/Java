@@ -254,6 +254,7 @@ Welcome to Yura Mishin's Java repository.
 + [WebJars](https://www.webjars.org/)
 + [Spring profiles](https://www.baeldung.com/spring-profiles)
 + [BCryptPasswordEncoder](https://bcrypt-generator.com/)
++ [JWT](https://jwt.io/)
 
 ## JavaFX
 + [JavaFX в IntelliJ IDEA](https://metanit.com/java/javafx/1.8.php)
@@ -274,6 +275,7 @@ Welcome to Yura Mishin's Java repository.
 + [Teach Yourself Programming in Ten Years by Peter Norvig](https://norvig.com/21-days.html)
 + [OCP Oracle Certified Professional Java SE 11 Programmer I Study Guide: Exam 1Z0-815](https://www.amazon.com/Oracle-Certified-Professional-Programmer-Study/dp/1119584701)
 + [Практические задачи по Java — для курсов и прочих занятий](https://habr.com/ru/post/440436/)
++ [Computer Science. Основы программирования на Java, ООП, алгоритмы и структуры данных | Седжвик Роберт, Уэйн Кевин](https://www.ozon.ru/product/computer-science-osnovy-programmirovaniya-na-java-oop-algoritmy-i-struktury-dannyh-computer-144486759/?sh=X82JOyieDQ)
 
 ## Add-ons
 
