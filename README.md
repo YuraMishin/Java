@@ -50,6 +50,9 @@ Welcome to Yura Mishin's Java repository.
 + [VClock Timer](https://vclock.com/)
 + [Modern Java - A Guide to Java 8](https://github.com/winterbe/java8-tutorial)
 + [Awesome bits](https://github.com/keon/awesome-bits)
++ [Путеводитель по заметкам](https://github.com/qcha/JBook/blob/master/roadmap/table_of_contents.md)
++ [Javarush lectures](https://javarush.ipnodns.ru/)
++ [MJC School](https://mjc.school/)
 
 ## Tools
 + [Miro Board](https://miro.com/)
@@ -76,6 +79,7 @@ Welcome to Yura Mishin's Java repository.
 + [Beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile)
 + [GitHub Skills](https://skills.github.com/)
 + [Git Explorer](https://gitexplorer.com/)
++ [learngitbranching.js.org](https://learngitbranching.js.org/?locale=ru_RU)
 
 ## JUnit
 
@@ -118,6 +122,9 @@ Welcome to Yura Mishin's Java repository.
 + [Сравнение 6 алгоритмов сортировки](https://proglib.io/p/sravnenie-6-algoritmov-sortirovki-puzyrkom-vyborom-kuchey-vstavkami-sliyaniem-i-bystraya-2022-02-08)
 + [Крупнейшая библиотека алгоритмов с открытым исходным кодом на GitHub](https://the-algorithms.com/ru)
 + [Visualising data structures and algorithms through animation](https://visualgo.net/en/)
++ [Справочник по Java Collections Framework](https://habr.com/ru/post/237043/)
++ [Структуры данных в картинках. HashMap](https://habr.com/ru/post/128017/)
++ [Java собеседование. Коллекции](https://habr.com/ru/post/162017/)
 
 ## Java Stream API
 
@@ -176,6 +183,9 @@ Welcome to Yura Mishin's Java repository.
 + [Руководство по SQL для начинающих](https://proglib.io/p/rukovodstvo-po-sql-dlya-nachinayushchih-chast-1-sozdanie-bazy-dannyh-tablic-i-ustanovka-svyazey-mezhdu-tablicami-2022-02-07)
 + [Dbeaver](https://dbeaver.io/download/)
 + [MySQL Workbench](https://www.mysql.com/products/workbench/)
++ [Уровни изолированности транзакций для самых маленьких](https://habr.com/ru/post/469415/)
++ [Уровень изолированности транзакций](https://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C_%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D0%B9)
++ [ACID](https://ru.wikipedia.org/wiki/ACID)
 
 ## NoSQL
 + [MongoDB](https://www.mongodb.com/)
@@ -255,6 +265,9 @@ Welcome to Yura Mishin's Java repository.
 + [Spring profiles](https://www.baeldung.com/spring-profiles)
 + [BCryptPasswordEncoder](https://bcrypt-generator.com/)
 + [JWT](https://jwt.io/)
++ [Евгений Борисов — Spring-потрошитель, часть 1](https://youtu.be/BmBr5diz8WA)
++ [Евгений Борисов — Spring-потрошитель, часть 2](https://youtu.be/cou_qomYLNU)
++ [Евгений Борисов — Spring-построитель](https://youtu.be/rd6wxPzXQvo)
 
 ## JavaFX
 + [JavaFX в IntelliJ IDEA](https://metanit.com/java/javafx/1.8.php)
@@ -312,3 +325,8 @@ Welcome to Yura Mishin's Java repository.
 + [Java собеседование с ответами (тестовое)](https://www.youtube.com/watch?v=wupkhc_su8g&ab_channel=Terry)
 + [Собеседование Java Spring - Разбор вопросов с собеседований на Java Developer](https://www.youtube.com/watch?v=_7riaBIOxbM&ab_channel=MadBrains)
 + [Junior - разработчик. Как пройти собеседование?](https://www.youtube.com/watch?v=eF9AuxI43Dc&t=3s&ab_channel=alishev)
++ [Собеседование Java](https://javastudy.ru/category/interview/page/3/)
++ [Разбор вопросов и ответов с собеседований на Java-разработчика. Часть 1](https://javarush.ru/groups/posts/3243-razbor-voprosov-i-otvetov-na-sobesedovanii-chastjh-1)
++ [90 часто задаваемых вопросов и ответов на собеседовании по Java](https://javarush.ru/groups/posts/3904-kofe-breyk-145-90-chasto-zadavaemihkh-voprosov-i-otvetov-na-sobesedovanii-po-java)
++ [Вопросы на собеседование](https://topuch.ru/1-reveyu-primitivnie-tipi/index1.html)
++ [Вопросы на собеседование](https://github.com/enhorse/java-interview)

@@ -37,4 +37,30 @@ class FactorialLoopTest {
 
         assertThat(result).isEqualTo(expect);
     }
+
+    /**
+     * Method tests calculation of factorial.
+     */
+    @Test
+    void whenCalculateFactorialFor5Then120() {
+        FactorialLoop factorial = new FactorialLoop();
+
+        int expect = 120;
+        int result = factorial.calcV2(5).intValue();
+
+        assertThat(result).isEqualTo(expect);
+    }
+
+    /**
+     * Method tests calculation of factorial.
+     */
+    @Test
+    void whenCalculateFactorialFor0Then1() {
+        FactorialLoop factorial = new FactorialLoop();
+
+        int expect = 1;
+        int result = factorial.calcV2(0).intValue();
+
+        assertThat(result).isEqualTo(expect);
+    }
 }
