@@ -66,10 +66,12 @@ Welcome to Yura Mishin's Java repository.
 + [Apache Maven Wrapper](https://maven.apache.org/wrapper/download.cgi)
 + [Maven Repository: Top Projects at Maven Repository](https://mvnrepository.com/popular)
 + [Maven DMDEV](https://youtu.be/QpaWl2-BsMY?list=PLnh8EajVFTl5fusY9MRBEOoLjbv8Trms5)
++ [Jar-Download](https://jar-download.com/)
 
 ## GIT
 
 + [Git Doc](https://git-scm.com/doc)
++ [Git Book](https://git-scm.com/book/ru/v2)
 + [Flight rules for Git](https://github.com/k88hudson/git-flight-rules)
 + [GitHowTo](https://githowto.com/ru)
 + [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
@@ -80,6 +82,7 @@ Welcome to Yura Mishin's Java repository.
 + [GitHub Skills](https://skills.github.com/)
 + [Git Explorer](https://gitexplorer.com/)
 + [learngitbranching.js.org](https://learngitbranching.js.org/?locale=ru_RU)
++ [Введение в Git](https://habr.com/ru/post/472600/)
 
 ## JUnit
 
@@ -224,6 +227,7 @@ Welcome to Yura Mishin's Java repository.
 + [Test-driven development / TDD](https://en.wikipedia.org/wiki/Test-driven_development)
 + [Agile](http://agilemanifesto.org/)
 + [SOLID](https://en.wikipedia.org/wiki/SOLID)
++ [Принципы SOLID на примерах](https://habr.com/ru/post/688530/)
 + [GRASP](https://ru.wikipedia.org/wiki/GRASP)
 + [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 + [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
@@ -330,3 +334,4 @@ Welcome to Yura Mishin's Java repository.
 + [90 часто задаваемых вопросов и ответов на собеседовании по Java](https://javarush.ru/groups/posts/3904-kofe-breyk-145-90-chasto-zadavaemihkh-voprosov-i-otvetov-na-sobesedovanii-po-java)
 + [Вопросы на собеседование](https://topuch.ru/1-reveyu-primitivnie-tipi/index1.html)
 + [Вопросы на собеседование](https://github.com/enhorse/java-interview)
++ [LeetCode examples](https://www.youtube.com/playlist?list=PLot-Xpze53lfQmTEztbgdp8ALEoydvnRQ)
